@@ -1,5 +1,5 @@
 {% set name = "p4p" %}
-{% set version = "3.3.2" %}
+{% set version = "3.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mdavidsaver/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 314915d79a8f0a96988aa59af70476fddfc127ca978739f33c287db201aaf07d
+  sha256: c3a55a4899391b6c4221f7e253896288d84a68350dad2b7b91e6821e180a106f
   patches:
     - 0001-py38_windows.patch
 
@@ -21,15 +21,19 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    - cython
     - epicscorelibs
     - numpy
     - pip
+    - ply
     - setuptools
     - setuptools_dso
   run:
     - python
+    - cython
     - epicscorelibs
     - {{ pin_compatible('numpy') }}
+    - ply
 
 test:
   imports:

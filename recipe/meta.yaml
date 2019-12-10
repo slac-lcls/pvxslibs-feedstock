@@ -19,9 +19,9 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - cython
   host:
     - python
+    - cython
     - epicscorelibs
     - numpy
     - pip

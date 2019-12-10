@@ -19,6 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - cython
   host:
     - python
     - epicscorelibs
@@ -29,6 +30,7 @@ requirements:
     - setuptools_dso
   run:
     - python
+    - cython
     - epicscorelibs
     - {{ pin_compatible('numpy') }}
     - ply

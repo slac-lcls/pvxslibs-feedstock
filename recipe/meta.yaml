@@ -1,5 +1,5 @@
 {% set name = "p4p" %}
-{% set version = "3.4.1" %}
+{% set version = "3.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mdavidsaver/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: c3a55a4899391b6c4221f7e253896288d84a68350dad2b7b91e6821e180a106f
+  sha256: 4b4a920e28163dc35977f5391ae82b475b7ddf0ee8ab5e05e61669ae3328609e
   patches:
     - 0001-py38_windows.patch
 

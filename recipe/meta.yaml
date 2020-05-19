@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - cython
-    - epicscorelibis =7.0.3.99.4
+    - epicscorelibs =7.0.3.99.4
     - numpy
     - pip
     - ply

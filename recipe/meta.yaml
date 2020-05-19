@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - cython
-    - epicscorelibs
+    - epicscorelibis=7.0.3.99.4
     - numpy
     - pip
     - ply
@@ -31,13 +31,13 @@ requirements:
   run:
     - python
     - cython
-    - epicscorelibs
+    - epicscorelibs=7.0.3.99.4
     - {{ pin_compatible('numpy') }}
     - ply
 
 test:
   imports:
-    - p4p 
+    - p4p
 
 about:
   home: http://github.com/mdavidsaver/p4p

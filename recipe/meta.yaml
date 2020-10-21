@@ -12,7 +12,7 @@ source:
     - 0001-py38_windows.patch
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:

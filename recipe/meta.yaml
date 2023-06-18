@@ -1,5 +1,5 @@
 {% set name = "pvxslibs" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 79ca4a772b7d59b93ae6c3ff30ca0948a0eeac324ed4b85b6afb7535e17b895a
+  sha256: 2f58e2b706c0a919f4553c40925994d878ea1bdea6383497a79d00799b75fbb1
 
 build:
   number: 1
@@ -22,7 +22,7 @@ requirements:
     - python
     - cython
     - libevent
-    - epicscorelibs =7.0.4.99
+    - epicscorelibs
     - ply
     - setuptools
     - setuptools_dso
@@ -30,7 +30,7 @@ requirements:
     - python
     - cython
     - libevent
-    - epicscorelibs =7.0.4.99
+    - epicscorelibs
     - nose >=1.1.2
     - {{ pin_compatible('numpy') }}
     - ply

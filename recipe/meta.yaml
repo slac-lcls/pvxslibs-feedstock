@@ -10,7 +10,7 @@ source:
   sha256: 2f58e2b706c0a919f4553c40925994d878ea1bdea6383497a79d00799b75fbb1
 
 build:
-  number: 1
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - python
     - cython
     - libevent
-    - epicscorelibs
+    - epicscorelibs=7.0.7.99.0.0
     - ply
     - setuptools
     - setuptools_dso
@@ -30,9 +30,9 @@ requirements:
     - python
     - cython
     - libevent
-    - epicscorelibs
+    - epicscorelibs=7.0.7.99.0.0
     - nose >=1.1.2
-    - {{ pin_compatible('numpy') }}
+      #    - {{ pin_compatible('numpy') }}
     - ply
 
 test:
